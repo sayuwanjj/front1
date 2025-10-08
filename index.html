@@ -7,9 +7,13 @@
         <link rel="stylesheet" href="style/styles.css">
     </head>
     <body>
+        <!-- Изменение: Заменили div на семантические теги -->
         <div class="page-container">
-            <div class="header">Хэдер</div>
-            <div class="nav">
+            <header class="header"> <!-- Было: <div class="header"> -->
+                <h1>Хэдер</h1> <!-- Добавили заголовок для семантики -->
+            </header>
+
+            <nav class="nav"> <!-- Было: <div class="nav"> -->
                 <ul class="nav-list">
                     <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
                     <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
@@ -17,44 +21,54 @@
                     <li class="nav-item"><a class="nav-link" href="pages/goods.html">Товары</a></li>
                     <li class="nav-item"><a class="nav-link" href="pages/contacts.html">Контакты</a></li>
                 </ul>
-            </div>
-            <div class="content">
-                <div class="profile-header">
+            </nav>
+
+            <main class="content"> <!-- Было: <div class="content"> -->
+                <article class="profile-header"> <!-- Было: <div class="profile-header"> -->
                     <h1 class="profile-title">Информация об авторе</h1>
                     <img class="profile-photo" src="images/photo.png" alt="Фото автора">
                     <h2 class="profile-name">Грязнова Арина Павловна</h2>
                     <p class="profile-group">ЭФБО-04-24</p>
-                </div>
+                </article>
                 
-                <div class="about-me">
+                <section class="about-me"> <!-- Было: <div class="about-me"> -->
+                    <h2>Обо мне</h2> <!-- Добавили заголовок для семантики -->
                     <p>Обо мне: Я родилась в Коломне. Цифры рано ударили в голову. В четыре активно играла в доту 2.
 Потом музыкальная школа, школа, художественная школа, игры. Так я становилась сильней и тренировала чемпионов int 2021.</p>
-                </div>
+                </section>
                 
-                <div class="skills-container">
-                    <div class="skill-tag">-Самые быстрые пальцы на диком западе</div>
-                    <div class="skill-tag">-Скорость реакции выше, чем у человека-паука</div>
-                    <div class="skill-tag">-Зрение лучше, чем у орла</div>
-                    <div class="skill-tag">-Критическое мышление развито лучше, чем у шимпанзе</div>
-                </div>
+                <section class="skills-container"> <!-- Было: <div class="skills-container"> -->
+                    <h2>Мои навыки</h2> <!-- Добавили заголовок для семантики -->
+                    <div class="skills-grid"> <!-- Обертка для Grid -->
+                        <div class="skill-tag">Самые быстрые пальцы на диком западе</div>
+                        <div class="skill-tag">Скорость реакции выше, чем у человека-паука</div>
+                        <div class="skill-tag">Зрение лучше, чем у орла</div>
+                        <div class="skill-tag">Критическое мышление развито лучше, чем у шимпанзе</div>
+                    </div>
+                </section>
                 
-                <div class="experience-section">
+                <section class="experience-section"> <!-- Было: <div class="experience-section"> -->
                     <h2 class="section-title">Мой опыт работы</h2>
-                    <div class="experience-card">
-                        <h3 class="experience-title">Опыт 1</h3>
-                        <p class="experience-desc">Работала в компклубе тренером.</p>
+                    <div class="experience-grid"> <!-- Обертка для Grid -->
+                        <article class="experience-card"> <!-- Было: <div class="experience-card"> -->
+                            <h3 class="experience-title">Опыт 1</h3>
+                            <p class="experience-desc">Работала в компклубе тренером.</p>
+                        </article>
+                        <article class="experience-card">
+                            <h3 class="experience-title">Опыт 2</h3>
+                            <p class="experience-desc">Продавала бургеры в юнифуде.</p>
+                        </article>
+                        <article class="experience-card">
+                            <h3 class="experience-title">Опыт 3</h3>
+                            <p class="experience-desc">Професиионально собирала компьютерные кресла</p>
+                        </article>
                     </div>
-                    <div class="experience-card">
-                        <h3 class="experience-title">Опыт 2</h3>
-                        <p class="experience-desc">Продавала бургеры в юнифуде.</p>
-                    </div>
-                    <div class="experience-card">
-                        <h3 class="experience-title">Опыт 3</h3>
-                        <p class="experience-desc">Професиионально собирала компьютерные кресла</p>
-                    </div>
-                </div>
-            </div>
-             <div class="footer">© 2025 Портфолио. Все права защищены.</div>
-    </div>
-</body>
-</html>    
+                </section>
+            </main>
+
+            <footer class="footer"> <!-- Было: <div class="footer"> -->
+                <p>© 2025 Портфолио. Все права защищены.</p> <!-- Добавили параграф для семантики -->
+            </footer>    
+        </div>
+    </body>
+</html>
