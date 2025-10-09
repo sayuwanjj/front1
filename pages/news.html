@@ -9,36 +9,46 @@
 <body>
     <div class="page-container">
         <header class="header">
-            <h1>X2App</h1>
+            <h1>Хэдер</h1>
         </header>
 
         <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="practices.html">Достижения</a></li>
-                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-            </ul>
+            <ul class="nav__list">
+                <li class="nav__item ">
+                    <a class="nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link nav__item--active" href="pages/news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/practices.html">Достижения</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="pages/goods.html">Товары</a>
+                </li>
+                <li class="nav__item ">
+                    <a class="nav__link" href="pages/contacts.html">Контакты</a>
+                </li>
+                </ul>
         </nav>
 
-        <main class="content">
-            <h2 class="section-title">Последние новости</h2>
-            <div class="news-container">
-                <article class="news-card">
-                    <h3 class="news-title">Шокирующее известие!</h3>
-                    <p class="news-meta">25.09.2025 10:30 А.П.Грязнова</p>
-                    <p class="news-text">Самая любимая команда Тим Спирит не прошли в финал.</p>
+        <main class="news">
+            <h2 class="news__title">Последние новости</h2>
+            <div class="news__list">
+                <article class="news-item">
+                    <h3 class="news-item__title">Шокирующее известие!</h3>
+                    <p class="news-item__date">25.09.2025 10:30 А.П.Грязнова</p>
+                    <p class="news-item__text">Самая любимая команда Тим Спирит не прошли в финал.</p>
                 </article>
-                <article class="news-card">
-                    <h3 class="news-title">Полное разочарование</h3>
-                    <p class="news-meta">25.09.2025 10:55 А.П.Грязнова</p>
-                    <p class="news-text">Фальконы выиграли int 2025. Этого ожидали все, но надеялись, что так не будет</p>
+                <article class="news-item">
+                    <h3 class="news-item__title">Полное разочарование</h3>
+                    <p class="news-item__date">25.09.2025 10:55 А.П.Грязнова</p>
+                    <p class="news-item__text">Фальконы выиграли int 2025. Этого ожидали все, но надеялись, что так не будет</p>
                 </article>
-                <article class="news-card">
-                    <h3 class="news-title">Бедные экстримы и аме</h3>
-                    <p class="news-meta">25.09.2025 11:00 А.П.Грязнова</p>
-                    <p class="news-text">Рисовые братья подвели...Марко Ройс, мой любимый Марко Ройс. Он снова не чемпион Германии. Он снова становится вторым.</p>
+                <article class="news-item">
+                    <h3 class="news-item__title">Бедные экстримы и аме</h3>
+                    <p class="news-item__date">25.09.2025 11:00 А.П.Грязнова</p>
+                    <p class="news-item__text">Рисовые братья подвели...Марко Ройс, мой любимый Марко Ройс. Он снова не чемпион Германии. Он снова становится вторым.</p>
                 </article>
             </div>
         </main>
