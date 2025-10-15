@@ -4,58 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Товары</title>
-    <link rel="stylesheet" href="../style/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="../style/styles.css">
 </head>
-<body>
-    <div class="page-container">
-        <header class="header">
-            <h1>Хэдер</h1>
+<body class="bg-light">
+    <div class="container-fluid p-0">
+        <!-- Header -->
+        <header class="bg-primary text-white py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h1 class="h3 mb-1">Мой Магазин</h1>
+                    </div>
+                    <div class="col-auto">
+                        <span class="badge bg-light text-primary">скидки!</span>
+                    </div>
+                </div>
+            </div>
         </header>
 
-       <nav class="nav">
-                <ul class="nav__list">
-        <li class="nav__item">
-            <a class="nav__link" href="../index.html">Главная</a>
-        </li>
-        <li class="nav__item">
-            <a class="nav__link" href="news.html">Новости</a>
-        </li>
-        <li class="nav__item">
-            <a class="nav__link" href="practices.html">Достижения</a>
-        </li>
-        <li class="nav__item nav__item--active">
-            <a class="nav__link" href="goods.html">Товары</a>
-        </li>
-        <li class="nav__item">
-            <a class="nav__link" href="contacts.html">Контакты</a>
-        </li>
-    </ul>
-        </nav> 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                <i class="bi bi-house me-1"></i>Главная
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">
+                                <i class="bi bi-newspaper me-1"></i>Новости
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="practices.html">
+                                <i class="bi bi-code-slash me-1"></i>Достижения
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="goods.html">
+                                <i class="bi bi-cart me-1"></i>Товары
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">
+                                <i class="bi bi-telephone me-1"></i>Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-        <main class="content">
-            <h2 class="section-title">Товары</h2>
-            <div class="products-grid">
-                <article class="product-card">
-                    <img class="product-image" src="../images/goods1.jpg" alt="Кресло">
-                    <h3 class="product-name">Кресло</h3>
-                    <p class="product-price">от 20 399 руб.</p>
-                </article>
-                <article class="product-card">
-                    <img class="product-image" src="../images/goods2.jpg" alt="Компьютер">
-                    <h3 class="product-name">Компьютер</h3>
-                    <p class="product-price">от 90 999 руб.</p>
-                </article>
-                <article class="product-card">
-                    <img class="product-image" src="../images/goods3.jpg" alt="Клавиатура и мышь">
-                    <h3 class="product-name">Клавиатура и мышь</h3>
-                    <p class="product-price">от 4 599 руб./мес</p>
-                </article>
+        <main class="content py-4">
+            <!-- Карусель -->
+            <div class="carousel-container mb-5">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../images/goods1.jpg" class="d-block w-100" alt="Кресло">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Крутейшее игровое кресло</h5>
+                                <p>от 20 399 руб.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/goods2.jpg" class="d-block w-100" alt="Компьютер">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Компьютер нового поколения</h5>
+                                <p>от 90 999 руб.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/goods3.jpg" class="d-block w-100" alt="Клавиатура и мышь">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Клавиатура и мышь с RGB подсветкой</h5>
+                                <p>от 4 599 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Секция с товарами -->
+            <div class="products-section">
+                <h2 class="text-center mb-4">Популярные товары</h2>
+                <div class="row g-4">
+                    <!-- Товар 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card shadow-sm">
+                            <img src="../images/goods1.jpg" class="card-img-top product-image" alt="Игровое кресло">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Игровое кресло</h5>
+                                <p class="card-text">Эргономичное игровое кресло с поддержкой спины и регулируемой высотой.</p>
+                                <div class="mt-auto">
+                                    <p class="h5 text-primary mb-3">20 399 руб.</p>
+                                    <div class="btn-group-custom">
+                                        <button class="btn btn-primary flex-fill">
+                                            <i class="bi bi-cart-plus me-2"></i>В корзину
+                                        </button>
+                                        <button class="btn btn-outline-success">
+                                            Купить
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Товар 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card shadow-sm">
+                            <img src="../images/goods2.jpg" class="card-img-top product-image" alt="Игровой компьютер">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Игровой компьютер</h5>
+                                <p class="card-text">Мощный игровой компьютер для комфортной игры в любые проекты.</p>
+                                <div class="mt-auto">
+                                    <p class="h5 text-primary mb-3">90 999 руб.</p>
+                                    <div class="btn-group-custom">
+                                        <button class="btn btn-primary flex-fill">
+                                            <i class="bi bi-cart-plus me-2"></i>В корзину
+                                        </button>
+                                        <button class="btn btn-outline-success">
+                                            Купить
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Товар 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card shadow-sm">
+                            <img src="../images/goods3.jpg" class="card-img-top product-image" alt="Клавиатура и мышь">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Клавиатура и мышь</h5>
+                                <p class="card-text">Комплект клавиатуры и мыши с RGB подсветкой и быстрым откликом.</p>
+                                <div class="mt-auto">
+                                    <p class="h5 text-primary mb-3">4 599 руб.</p>
+                                    <div class="btn-group-custom">
+                                        <button class="btn btn-primary flex-fill">
+                                            <i class="bi bi-cart-plus me-2"></i>В корзину
+                                        </button>
+                                        <button class="btn btn-outline-success">
+                                            Купить
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
 
-        <footer class="footer">
-            <p>© 2025 Портфолио. Все права защищены.</p>
+        <footer class="footer text-center">
+            <div class="container">
+                <p>© 2025 Портфолио. Все права защищены.</p>
+            </div>
         </footer>
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
