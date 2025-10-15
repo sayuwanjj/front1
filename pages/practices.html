@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+     <script>
+        (function () {
+            var savedTheme = localStorage.getItem('theme');
+            var systemTheme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            var theme = savedTheme || systemTheme;
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+    <script src="../js/theme-toggle.js" defer></script>
+    <script src="theme-toggle.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Достижения</title>
@@ -9,7 +19,12 @@
 <body>
     <div class="page-container">
         <header class="header">
-            <h1>Хэдер</h1>
+            <h1>Достижения</h1>
+            <div class="col-auto">
+                        <button id="themeToggle" class="btn btn-light btn-sm" aria-pressed="false">
+                            <span class="theme-icon">🌓</span> Тема
+                        </button>
+                    </div>
         </header>
 
         <nav class="nav">
